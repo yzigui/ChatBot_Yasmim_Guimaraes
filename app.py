@@ -26,6 +26,9 @@ def obter_resposta(texto: str) -> str:
         ('olá', 'boa tarde', 'bom dia'): 'Olá tudo bem!',
         'como estás': 'Estou bem, obrigado!',
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...',
+
+        'qual é a tua função?': 'A minha função é responder a perguntas simples.',
+        'gostas de python?': 'Sim, Python é uma linguagem muito utilizada.'
     }
 
     for chave, resposta in respostas.items():
@@ -34,6 +37,12 @@ def obter_resposta(texto: str) -> str:
                 return resposta
         elif chave in comando:
             return resposta
+
+    if 'horas' in comando:
+        return f'São: {datetime.now():%H:%M} horas'
+
+    if 'data' in comando:
+        return f'Hoje é dia: {datetime.now():%d-%m-%Y}'
 
     return f'Desculpa, não entendi a questão! {texto}'
 
