@@ -28,7 +28,8 @@ def obter_resposta(texto: str) -> str:
         ('bye', 'adeus', 'tchau'): 'Gostei de falar contigo! Até breve...',
 
         'qual é a tua função?': 'A minha função é responder a perguntas simples.',
-        'gostas de python?': 'Sim, Python é uma linguagem muito utilizada.'
+        'gostas de python?': 'Sim, Python é uma linguagem muito utilizada.',
+        'o que é programação?': 'Programação é criar instruções para o computador executar.'
     }
 
     for chave, resposta in respostas.items():
