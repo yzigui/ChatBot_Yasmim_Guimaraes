@@ -41,11 +41,15 @@ def obter_resposta(texto: str) -> str:
 def chat() -> None:
     print('Bem-vindo ao ChatBot!')
     print('Escreva "bye" para sair do chat')
+
     name: str = input('Bot: Como te chamas? ')
     print(f'Bot: Olá, {name}! \n Como te posso ajudar?')
 
     while True:
         user_input: str = input('Tu: ')
+        resposta: str = obter_resposta(user_input)
+
+        print(f'Bot: {resposta}')
 
         if resposta == 'Gostei de falar contigo! Até breve...':
             break
