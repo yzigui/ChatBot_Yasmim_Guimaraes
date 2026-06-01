@@ -29,7 +29,8 @@ def obter_resposta(texto: str) -> str:
 
         'qual é a tua função?': 'A minha função é responder a perguntas simples.',
         'gostas de python?': 'Sim, Python é uma linguagem muito utilizada.',
-        'o que é programação?': 'Programação é criar instruções para o computador executar.'
+        'o que é programação?': 'Programação é criar instruções para o computador executar.',
+        'ajuda': 'Podes perguntar como estou, as horas, a data ou outras perguntas simples.'
     }
 
     for chave, resposta in respostas.items():
